@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Removed
+- Nationality filtering from API endpoints and documentation
+- Nationality parameter from search and filter options
+
 ### Added
 - Initial project structure
 - Modular architecture with separate concerns

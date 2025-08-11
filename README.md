@@ -102,14 +102,13 @@ Set these environment variables in Vercel dashboard:
 - `limit` - Results per page (default: 50, max: 100)
 - `search` - Search text in player names
 - `gender` - Filter by gender (M/F)
-- `nationality` - Filter by nationality code
-- `country` - Alias for nationality
+- `sponsors` - Comma-separated sponsor IDs
 - `sponsors` - Comma-separated sponsor IDs
 - `isFavourite` - Filter favorites (true/false)
 
 ### Other Endpoints
 
-- **GET** `/api/v1/nationalities` - Get available nationalities
+- **GET** `/api/v1/nationalities` - Get available nationalities (reference only, not for filtering)
 - **GET** `/api/v1/stats` - Get player statistics
 - **GET** `/health` - Health check with WTT API status
 - **GET** `/` - API documentation
@@ -159,7 +158,7 @@ curl "http://localhost:3000/api/v1/players?search=zhang&limit=10"
 
 ### Gender Filter
 ```bash
-curl "http://localhost:3000/api/v1/players?gender=F&nationality=CHN"
+curl "http://localhost:3000/api/v1/players?gender=F&sponsors=1,2"
 ```
 
 ### Advanced Filtering
@@ -170,8 +169,7 @@ curl -X POST "http://localhost:3000/api/v1/players/filter" \
     "page": 1,
     "limit": 50,
     "searchText": "zhang",
-    "gender": "M",
-    "nationality": ["CHN", "JPN"]
+    "gender": "M"
   }'
 ```
 

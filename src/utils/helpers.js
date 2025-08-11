@@ -20,11 +20,9 @@ function buildCacheKey(page, limit, filters) {
 function applyClientFilters(list, params) {
   const text = (params.searchText || '').toLowerCase();
   const ids = Array.isArray(params.players) ? params.players.map(String) : [];
-  const nats = Array.isArray(params.nationality) ? params.nationality : [];
 
   return list.filter(player => {
     if (params.gender && player.gender !== params.gender) return false;
-    if (nats.length && !nats.includes(player.nationality)) return false;
     if (ids.length && !ids.includes(String(player.ittfid))) return false;
     if (typeof params.isFavourite === 'boolean' && player.isFavourite !== params.isFavourite) return false;
     if (text && !(player.fullName || '').toLowerCase().includes(text)) return false;

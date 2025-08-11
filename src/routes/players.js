@@ -15,8 +15,6 @@ router.get('/', async (req, res) => {
       search,
       searchText,
       gender,
-      nationality,
-      country,
       sponsors,
       players,
       isFavourite
@@ -28,7 +26,6 @@ router.get('/', async (req, res) => {
       limit: Math.min(parseInt(limit), MAX_LIMIT), // Cap at MAX_LIMIT
       searchText: search || searchText || "",
       gender: gender || "",
-      nationality: nationality || country || [],
       sponsors: sponsors ? sponsors.split(',') : [],
       players: players ? players.split(',') : [],
       isFavourite: isFavourite === 'true'

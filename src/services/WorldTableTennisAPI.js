@@ -35,7 +35,6 @@ class WorldTableTennisLiveAPI {
     // Build request payload
     const payload = {
       sponsors: filters.sponsors || [],
-      nationality: filters.nationality || [],
       isFavourite: filters.isFavourite || false,
       players: filters.players || [],
       gender: filters.gender || "",
@@ -120,7 +119,6 @@ class WorldTableTennisLiveAPI {
       limit = 50,
       searchText = "",
       gender = "",
-      nationality = [],
       sponsors = [],
       players = [],
       isFavourite = false
@@ -129,7 +127,6 @@ class WorldTableTennisLiveAPI {
     const filters = {
       searchText: searchText.trim(),
       gender,
-      nationality: Array.isArray(nationality) ? nationality : (nationality ? [nationality] : []),
       sponsors: Array.isArray(sponsors) ? sponsors : (sponsors ? [sponsors] : []),
       players: Array.isArray(players) ? players : (players ? [players] : []),
       isFavourite
