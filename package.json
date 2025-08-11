@@ -1,0 +1,19 @@
+{
+  "name": "table-tennis-data",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node src/tests/testAPI.js",
+    "start": "node src/index.js",
+    "dev": "node src/index.js"
+  },
+  "keywords": ["table-tennis", "api", "proxy", "wtt"],
+  "author": "",
+  "license": "ISC",
+  "description": "Enhanced World Table Tennis Live API Proxy with advanced filtering",
+  "dependencies": {
+    "axios": "^1.11.0",
+    "express": "^5.1.0",
+    "node-cache": "^5.1.2"
+  }
+}
