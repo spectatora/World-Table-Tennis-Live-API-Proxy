@@ -6,7 +6,7 @@
     "test": "node src/tests/testAPI.js",
     "start": "node src/index.js",
     "dev": "node src/index.js",
-    "build": "echo 'No build step required'",
+    "build": "echo 'Build completed'",
     "vercel-build": "echo 'Vercel build completed'"
   },
   "keywords": ["table-tennis", "api", "proxy", "wtt"],

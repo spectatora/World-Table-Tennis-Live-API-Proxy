@@ -206,3 +206,4 @@ out/
 # Cache directories
 .cache/
 .temp/ 
+.vercel
