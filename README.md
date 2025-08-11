@@ -50,6 +50,44 @@ npm test
 
 The server will start on port 3000 (or the port specified in the PORT environment variable).
 
+## 🌐 Deployment
+
+### Vercel Deployment
+
+This project is optimized for Vercel deployment. Follow these steps:
+
+1. **Install Vercel CLI**
+   ```bash
+   npm i -g vercel
+   ```
+
+2. **Login to Vercel**
+   ```bash
+   vercel login
+   ```
+
+3. **Deploy to Vercel**
+   ```bash
+   vercel
+   ```
+
+4. **For production deployment**
+   ```bash
+   vercel --prod
+   ```
+
+### Environment Variables
+
+Set these environment variables in Vercel dashboard:
+- `NODE_ENV`: `production`
+- `PORT`: `3000` (optional, Vercel handles this automatically)
+
+### Alternative Deployment Options
+
+- **Heroku**: Use the existing `package.json` scripts
+- **Railway**: Direct deployment from GitHub
+- **Render**: Use the Node.js buildpack
+
 ## 📚 API Endpoints
 
 ### Players API

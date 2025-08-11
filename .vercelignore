@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+
+# Development files
+.env
+.env.local
+.env.development
+.env.test
+
+# Test files
+src/tests/
+test-results/
+coverage/
+
+# Documentation
+README.md
+CONTRIBUTING.md
+CHANGELOG.md
+SECURITY.md
+
+# Git files
+.git/
+.gitignore
+.gitattributes
+
+# IDE files
+.vscode/
+.idea/
+
+# Logs
+*.log
+logs/
+
+# Cache
+.cache/
+.temp/
+
+# OS files
+.DS_Store
+Thumbs.db 
